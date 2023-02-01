@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="inventory d-flex">
+        <!--start : sidebar-->
+        <input type="checkbox" id="boxtoggle" name="box" class="check">
+        <aside class="sidebar">
+            <nav class="secondary-nav">
+                <div class="secondary-nav-logo">
+                    <img src="./assets/images/Logo.png" alt="logo">
+                    <img src="./assets/images/KANBAN.png" alt="logo-name" class="m-left-12">
+                </div>
+                <ul class="secandary-nav-items">
+                    <div class="secandary-nav-item d-flex">
+                        <img src="./assets/images/home.png" alt="Dashboard">
+                        <li class="item"><a href="#" class="item-link">
+                                Dashboard
+                            </a></li>
+                    </div>
+                    <div class="secandary-nav-item d-flex">
+                        <img src="./assets/images/purchase.png" alt="Dashboard">
+                        <li class="item "><a href="#" class="item-link active">
+                                Inventory
+                            </a></li>
+                    </div>
+
+                    <div class="secandary-nav-item d-flex">
+                        <img src="./assets/images/chart.png" alt="Dashboard">
+                        <li class="item"><a href="#" class="item-link">
+                                Reports
+                            </a></li>
+                    </div>
+                    <div class="secandary-nav-item d-flex">
+                        <img src="./assets/images/admin.png" alt="Dashboard">
+                        <li class="item"><a href="#" class="item-link">
+                                Suppliers
+                            </a></li>
+                    </div>
+                    <div class="secandary-nav-item d-flex">
+                        <img src="./assets/images/box.png" alt="Dashboard">
+
+                        <li class="item"><a href="#" class="item-link">
+                                Orders
+                            </a></li>
+                    </div>
+                    <div class="secandary-nav-item d-flex">
+                        <img src="./assets/images/ManageStore.png" alt="Dashboard">
+                        <li class="item"><a href="#" class="item-link">
+                                Manage Store
+                            </a></li>
+                    </div>
+                </ul>
+            </nav>
+            <footer class="sidebar-footer">
+                <div class="secandary-nav-item">
+                    <img src="./assets/images/setting.png" alt="setting">
+                    <span class="footer-item">Settings</span>
+                </div>
+                <div class="secandary-nav-item">
+                    <img src="./assets/images/next.png" alt="logout">
+                    <span class="footer-item">Log Out</span>
+                </div>
+            </footer>
+        </aside>
+        <!--End : sidebar-->
+        <div class="inentory-content d-flex">
+            <!--Start : header-->
+            <header class="inventory-header">
+                <nav class="primary-nav d-flex">
+                    <div class="hamburger-menu d-flex">
+                        <div class="hamburger d-flex"><label for="boxtoggle">
+                            <span class="nav-toggle"></span>
+                            <span class="nav-toggle"></span>
+                            <span class="nav-toggle"></span>
+                            <span class="nav-toggle"></span></label>
+                        </div>
+                        <!--form-control-header-->
+                        <input type="text" id="search" name="search" placeholder="Search product, supplier, order"
+                            class="form-control-header">
+                    </div>
+                    <div class="admin d-flex">
+                        <img src="./assets/images/notifi.png" alt="notification" />
+                        <img src="./assets/images/lady.png" alt="lady" class="person" />
+                    </div>
+                </nav>
+            </header>
+            <!--End : header-->
+
+            <!--start : main-content-->
+            <main class="main-content d-flex">
+                <div class="border-radius">
+                <h4 class="main-content-header">Overall Inventory</h4>
+                <!--start : section-->
+                <section class="main-content-inventory d-flex">
+                    
+                    <div class="content-categori">
+                        <h3 class="heading">Categories</h3>
+                        <span class="rupees m-top-12">14</span>
+                        <span class="text-days m-top-12">Last 7 days</span>
+                    </div>
+                    <div class="content-categori">
+                        <h3 class="product">Total Products</h3>
+                        <div class="card d-flex">
+                        <span class="rupees m-top-12">868</span>
+                        <span class="rupees m-top-12">₹25000</span>
+                        </div>
+                        <div class="card d-flex">
+                        <span class="text-days m-top-12 m-right-47">Last 7 days</span>
+                        <span class="text-days m-top-12">Revenue</span>
+                        </div>
+                    </div>
+                    <div class="content-categori">
+                        <h3 class="sell">Top Selling</h3>
+                        <div class="card d-flex">
+                        <span class="rupees m-top-12">5</span>
+                        <span class="rupees m-top-12">₹2500</span>
+                        </div>
+                        <div class="card d-flex">
+                        <span class="text-days m-top-12 m-right-47">Last 7 days</span>
+                        <span class="text-days m-top-12">Cost</span>
+                        </div>
+                    </div>
+                    <div class="content-categori">
+                        <h3 class="stock">Low Stocks</h3>
+                        <div class="card d-flex">
+                        <span class="rupees m-top-12">12</span>
+                        <span class="rupees m-top-12">2</span>
+                        </div>
+                        <div class="card d-flex">
+                        <span class="text-days m-top-12 m-right-47">Ordered</span>
+                        <span class="text-days m-top-12">Not in stock</span>
+                    </div>
+                    </div>
+                </section>  
+            </div>
+                <!--End : section-->
+                <section class="table-content d-flex">
+                <!--start : table header-->
+                <div class="table-heading-btns d-flex">
+                    
+                    <div>
+                    <h4 class="table-head">Products</h4>
+                    </div>
+                    <div class="buttons d-flex">
+                    <button class="btn-product">Add Product</button>
+                    <button class="btn-rectangle">
+                        <img src="./assets/images/line.png" alt="filter" />
+                        Filters</button>
+                    <button class="btn-rectangle">Download all</button>
+                    </div>
+                </div>
+                <!--end : table header-->
+                <!--start : table-->
+                <div class="tableone">
+                <table class="product-stock-table">
+                    <!--Start : table body-->
+                    <tbody>
+                        <tr>
+                            <th class="table-heading border-bottom">Product</th>
+                            <th class="table-heading border-bottom">Buying Price</th>
+                            <th class="table-heading border-bottom">Quantity</th>
+                            <th class="table-heading border-bottom">Threshold Value</th>
+                            <th class="table-heading border-bottom">Expiry Date</th>
+                            <th class="table-heading border-bottom">Avaliablity</th>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Maggi</td>
+                            <td class="table-data border-bottom">₹430</td>
+                            <td class="table-data border-bottom">43 Packets</td>
+                            <td class="table-data border-bottom">12 Packets</td>
+                            <td class="table-data border-bottom">11/12/22</td>
+                            <td class="in-stock border-bottom">In-stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Bru</td>
+                            <td class="table-data border-bottom">₹257</td>
+                            <td class="table-data border-bottom">22 Packets</td>
+                            <td class="table-data border-bottom">12 Packets</td>
+                            <td class="table-data border-bottom">21/12/22</td>
+                            <td class="out-stock border-bottom">Out of stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Red Bull</td>
+                            <td class="table-data border-bottom">₹405</td>
+                            <td class="table-data border-bottom">36 Packets</td>
+                            <td class="table-data border-bottom">9 Packets</td>
+                            <td class="table-data border-bottom">5/12/22</td>
+                            <td class="in-stock border-bottom">In-stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Bourn Vita</td>
+                            <td class="table-data border-bottom">₹502</td>
+                            <td class="table-data border-bottom">14 Packets</td>
+                            <td class="table-data border-bottom">6 Packets</td>
+                            <td class="table-data border-bottom">8/12/22</td>
+                            <td class="out-stock border-bottom">Out of stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Horlicks</td>
+                            <td class="table-data border-bottom">₹530</td>
+                            <td class="table-data border-bottom">5 Packets</td>
+                            <td class="table-data border-bottom">5 Packets</td>
+                            <td class="table-data border-bottom">9/1/23</td>
+                            <td class="in-stock border-bottom">In-stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Harpic</td>
+                            <td class="table-data border-bottom">₹605</td>
+                            <td class="table-data border-bottom">10 Packets</td>
+                            <td class="table-data border-bottom">5 Packets</td>
+                            <td class="table-data border-bottom">9/1/23</td>
+                            <td class="in-stock border-bottom">In-stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Ariel</td>
+                            <td class="table-data border-bottom">₹408</td>
+                            <td class="table-data border-bottom">23 Packets</td>
+                            <td class="table-data border-bottom">7 Packets</td>
+                            <td class="table-data border-bottom">15/12/23</td>
+                            <td class="out-stock border-bottom">Out of stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom border-bottom">Scotch Brite</td>
+                            <td class="table-data border-bottom">₹359</td>
+                            <td class="table-data border-bottom">43 Packets</td>
+                            <td class="table-data border-bottom">8 Packets</td>
+                            <td class="table-data border-bottom">6/6/23</td>
+                            <td class="in-stock border-bottom">In-stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom">Coca cola</td>
+                            <td class="table-data">₹205</td>
+                            <td class="table-data">41 Packets</td>
+                            <td class="table-data">10 Packets</td>
+                            <td class="table-data">11/11/22</td>
+                            <td class="low-stock">Low stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom">Coca cola</td>
+                            <td class="table-data">₹205</td>
+                            <td class="table-data">41 Packets</td>
+                            <td class="table-data">10 Packets</td>
+                            <td class="table-data">11/11/22</td>
+                            <td class="low-stock">Low stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom">Coca cola</td>
+                            <td class="table-data">₹205</td>
+                            <td class="table-data">41 Packets</td>
+                            <td class="table-data">10 Packets</td>
+                            <td class="table-data">11/11/22</td>
+                            <td class="low-stock">Low stock</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data padding-top-bottom">Coca cola</td>
+                            <td class="table-data">₹205</td>
+                            <td class="table-data">41 Packets</td>
+                            <td class="table-data">10 Packets</td>
+                            <td class="table-data">11/11/22</td>
+                            <td class="low-stock">Low stock</td>
+                        </tr>
+                    </tbody>
+                    <!--End :table body-->
+                </table>
+            </div>
+                <!--End :  table-->
+                <!--Start : table footer-->
+                <div class="table-footer">
+                    <button class="btn-rectangle">Previous</button>
+                    <span class="page-no">Page 1 of 10</span>
+                    <button class="btn-rectangle btn-rectangle-next">Next</button>
+                </div>
+                 <!--End : table footer-->
+                </section>
+            </main>
+            <!--End : main-content-->
+        </div>
+    </div>
+</body>
+
+</html>
